@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RectangleTest {
     private final Rectangle rec = new Rectangle();
+    private final Square sq = new Square();
 
     @Test
     void testSetLength() {
@@ -29,6 +30,15 @@ public class RectangleTest {
         rec.setLength(5);
 
         assertEquals(15, rec.getArea());
+
+    }
+
+    @Test
+    void testSquare() {
+        sq.setSide(3);
+
+        assertEquals(3, sq.getSide());
+        assertEquals(9, sq.getArea());
 
     }
 }

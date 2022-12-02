@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle extends Shape{
     float length;
     float width;
 
@@ -18,6 +18,7 @@ public class Rectangle {
         this.length = length;
     }
 
+    @Override
     public float getArea(){
         return this.length * this.width;
     }
