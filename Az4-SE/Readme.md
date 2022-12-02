@@ -24,7 +24,14 @@
 
 ## سوالات
 ### 1
+نام کامل اصول SOLID به شرح زیر است:
+Single Responsibility, Open/Closed, Liskov substitution, Interface segregation, and Dependency inversion
+Single responsibility:
+این اصل میگوید که هر کلاس مسئولیت پاسخگویی به فقط یک Actor را دارد. یعنی درواقع هر کلاس نباید بیشتر از یک دلیل برای تغییر داشته باشد. حتی اگر کارهای مختلفی انجام دهد.
+Open/Closed principle: 
 ### 2
+
 ### 3
+
 ### 4
 هنگامی که تغییرات طول و عرض مجاز نباشد میتوان کلاس مربع را از کلاس مستطیل ارث بری که و دیگر نیازی به تشگیل گلاس shape نیست.
