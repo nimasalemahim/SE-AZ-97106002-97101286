@@ -25,6 +25,8 @@
 # سوالات
 
 ## 1
+GoF is the short name for the ironic computer science book, Gang of Four. It's official name is "Design Patterns: Elements of Reusable Object-Oriented Software"
+The three design patterns are described below:
 
 ### Creational Design Patterns
 Abstract Factory: Allows the creation of objects without specifying their concrete type.
@@ -60,4 +62,16 @@ Visitor: Separates an algorithm from an object structure by moving the hierarchy
 
 ### Creational Patterns
 These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
+
+## 3
+
+The short answer is this:
+Principles apply to all of programming. You should have a very good reason any time you choose not to follow principles.
+Patterns apply to specific, common problems. You should have a very good reason any time you choose to implement a pattern.
+
+Design principles provide high-level guidelines to design better software applications. They do not provide implementation guidelines and are not bound to any programming language. The SOLID (SRP, OCP, LSP, ISP, DIP) principles are one of the most popular sets of design principles. For example, the Single Responsibility Principle (SRP) suggests that a class should have only one reason to change. This is a high-level statement that we can keep in mind while designing or creating classes for our application. SRP does not provide specific implementation steps but it's up to you how you implement SRP in your application.
+
+## 4
+
+
 
