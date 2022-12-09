@@ -73,5 +73,7 @@ Design principles provide high-level guidelines to design better software applic
 
 ## 4
 
+Singleton design pattern violates the Single Responsibility Principle since the objects control how they are created and manage their life-cycle. This clearly contradicts the Single Responsibility Principle which states that a class should have one and only one reason for change. In order to limit the ability of creating instances of a class, a better alternative is in leveraging the factory or builder design patterns and then encapsulating the object creation logic. Another problem with the Singleton design pattern is that you can't extend them easily. You would want to take advantage of the Decorator design pattern to change the behavior.
 
+Note: Some people think that Singleton design pattern breaks the Open/Close principle. But it is not exactly true. It is a common misconception that the Singleton design pattern prohibits inheritance. Singleton does not inherently break the OCP. It just happens to be most commonly implemented in violation of the OCP by developers who have not read the GoF book. 
 
