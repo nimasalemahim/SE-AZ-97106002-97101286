@@ -4,12 +4,14 @@ import com.unittest.codecoverage.exceptions.BehaviorException;
 import com.unittest.codecoverage.exceptions.PersonException;
 import com.unittest.codecoverage.models.*;
 import com.unittest.codecoverage.models.validators.PersonValidator;
+import com.unittest.codecoverage.repositories.PersonRepository;
+import com.unittest.codecoverage.services.impl.PersonServiceImpl;
+import com.unittest.codecoverage.services.impl.TrafficBehaviorServiceImpl;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 //@SpringBootTest
 class CodecoverageApplicationTests {
@@ -54,7 +56,49 @@ class CodecoverageApplicationTests {
 
 		assertEquals(one_way_str, traffic.getStreetDirectionFlow());
 
+	}
+	@Test
+	void testRepositoriesPackage() {
+		try {
+			PersonRepository p = new PersonRepository();
+			p.insert(null);
+			fail();
+		} catch (Exception e){
+			assertTrue(true);
+		}
 
+		try {
+			PersonRepository p = new PersonRepository();
+			p.insert(new Person());
+			assertTrue(true);
+		} catch (Exception e){
+			fail();
+		}
+	}
+
+	@Test
+	void testServicesPackage() {
+		try {
+			PersonServiceImpl ps = new PersonServiceImpl();
+			ps.insert(new Person());
+			fail();
+		} catch (PersonException e){
+			assertTrue(true);
+		}
+
+		Footpassenger ft =  new Footpassenger();
+		ft.setCrossedTrafficLigth(TrafficLigth.RED);
+		ft.setCrossedTheRoad(true);
+		Traffic tr = new Traffic();
+		tr.setIntenseCarTraffic(true);
+
+		try {
+			TrafficBehaviorServiceImpl ts = new TrafficBehaviorServiceImpl();
+			ts.footpassengerCrossTheStreet(tr,ft);
+			fail();
+		} catch (BehaviorException e){
+			assertTrue(true);
+		}
 	}
 
 }
