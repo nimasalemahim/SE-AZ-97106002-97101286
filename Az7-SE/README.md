@@ -61,6 +61,10 @@ all fields now have getter and setter. this will encapsulate these fields.
 class Action
 Like 3AddressCode, this class had many fields which were public. Now they are changed to private, and also final. Because they are going to be fixed and constant.
 
+## State or Strategy
+class GrammarSymbol
+Added class "GrammarSymbolType" which is inherited by two other classes. So that GrammarSymbol has only one variable from "GrammarSymbolType" type.
+
 
 ------------------------------------------------------------------------
 
