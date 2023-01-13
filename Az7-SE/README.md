@@ -1,25 +1,19 @@
 آز مهندسی نرم افزار
+
 آزمایش 7
 
+-------
+
 نیما سالم
+
 علیرضا ایلامی
 
-شرح آزمایش:
-## Separate query from modifier
-```
-public int getTemp() {
-        addLastTemp();
-        return getLastTemp();
-    }
-```
 
-
-
-# مینی جاوا چیست؟
+## مینی جاوا چیست؟
 Mini-Java is a subset of Java. MiniJava compiler implement a compiler for the Mini-java
 programming language.
 
-# قوانین
+## قوانین
 ```
 Goal --> Source EOF
 Source --> ClassDeclarations MainClass
