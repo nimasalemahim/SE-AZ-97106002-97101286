@@ -8,7 +8,7 @@ abstract class Compare {
     abstract void compare(Memory memory, Stack<Address> ss);
 }
 
-class Equal extends Compare{
+class Equal extends Compare {
 
     @Override
     void compare(Memory memory, Stack<Address> ss) {
@@ -23,7 +23,7 @@ class Equal extends Compare{
     }
 }
 
-class Less extends Compare{
+class Less extends Compare {
 
     @Override
     void compare(Memory memory, Stack<Address> ss) {
