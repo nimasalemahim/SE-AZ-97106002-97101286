@@ -43,3 +43,24 @@ Argument --> , GenExpression Argument | lambda
 Identifier --> <IDENTIFIER_LITERAL>
 Integer --> <INTEGER_LITERAL>
 ```
+
+شرح آزمایش:
+## Separate query from modifier
+Memory -> getTemp()
+این تابع دو وظیفه مجزا داشت که آنها را از هم جدا کردیم و در دو تابع مختلف که متوالیا صدا زده میشوند، پیاده سازی کردیم.
+
+## Self Encapsulated Field
+3AddressCode class
+all fields were public. Now they are changed to private, with adding the getter functions.
+
+## Self Encapsulated Field
+Memory class
+all fields now have getter and setter. this will encapsulate these fields.
+
+## Self Encapsulated Field
+class Action
+Like 3AddressCode, this class had many fields which were public. Now they are changed to private, and also final. Because they are going to be fixed and constant.
+
+
+------------------------------------------------------------------------
+
