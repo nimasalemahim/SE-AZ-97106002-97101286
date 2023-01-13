@@ -4,9 +4,6 @@ import scanner.token.Token;
 
 import java.util.*;
 
-/**
- * Created by mohammad hosein on 6/25/2015.
- */
 public class ParseTable {
     private ArrayList<Map<Token, Action>> actionTable;
     private ArrayList<Map<NonTerminal, Integer>> gotoTable;
